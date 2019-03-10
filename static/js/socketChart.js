@@ -3,7 +3,7 @@ var socket = io("http://localhost:3000");
 
 function splitData(rawData) {
   var categoryData = [];
-  var values = []
+  var values = [];
   for (var i = 0; i < rawData.length; i++) {
       categoryData.push(rawData[i].splice(0, 1)[0]);
       values.push(rawData[i])
